@@ -8,7 +8,7 @@
                     </div>
                     <ul class="mt-2">
                         <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
-                            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <a href="/dashboard" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z"></path>
                                     <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
@@ -18,7 +18,7 @@
                             </a>
                         </li>
                         <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
-                            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <a href="/dashboard/candidates" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z"></path>
                                     <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
@@ -28,7 +28,7 @@
                             </a>
                         </li>
                         <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
-                            <a href="javascript:void(0)" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
+                            <a href="/dashboard/pickers" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z"></path>
                                     <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
@@ -42,9 +42,9 @@
                 <div class="px-8 border-t border-gray-700">
                     <ul class="w-full flex items-center justify-between bg-gray-800">
                         <li class="cursor-pointer text-white pt-5 pb-3">
-                            {{-- <button aria-label="open logs" class="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"><path d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h14.55v3H9v30h14.55v3Zm24.3-9.25-2.15-2.15 5.1-5.1h-17.5v-3h17.4l-5.1-5.1 2.15-2.15 8.8 8.8Z"/></svg>
-                            </button> --}}
+                            <button aria-label="open logs" class="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11H10V17Zm9-3.5-1.062-1.062 1.687-1.688H8v-1.5h6.125l-1.687-1.688L13.5 6.5 17 10Z"/></svg>
+                            </button>
                         </li>
                     </ul>
                 </div>
