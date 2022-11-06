@@ -7,33 +7,27 @@
                         <h1 class="text-white text-2xl font-semibold tracking-wide"><a href="/">{{ config('app.name') }}</a></h1>
                     </div>
                     <ul class="mt-2">
-                        <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
+                        <li class="flex w-full justify-between {{ Request::is('dashboard') ? "text-white" : 'text-gray-400' }} hover:text-gray-300 cursor-pointer items-center mb-6">
                             <a href="/dashboard" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"></path>
-                                    <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
-                                    <circle cx="12" cy="12" r="9"></circle>
-                                </svg>
+                                <span class="material-symbols-outlined">
+                                    grid_view
+                                    </span>
                                 <span class="text-sm ml-2">Dashboard</span>
                             </a>
                         </li>
-                        <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
+                        <li class="flex w-full justify-between {{ Request::is('dashboard/candidates*') ? "text-white" : 'text-gray-400' }} hover:text-gray-300 cursor-pointer items-center mb-6">
                             <a href="/dashboard/candidates" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"></path>
-                                    <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
-                                    <circle cx="12" cy="12" r="9"></circle>
-                                </svg>
+                                <span class="material-symbols-outlined">
+                                    airline_seat_recline_normal
+                                </span>
                                 <span class="text-sm ml-2">Kandidatat</span>
                             </a>
                         </li>
-                        <li class="flex w-full justify-between text-gray-400 hover:text-gray-300 cursor-pointer items-center mb-6">
+                        <li class="flex w-full justify-between {{ Request::is('dashboard/pickers*') ? "text-white" : 'text-gray-400' }} hover:text-gray-300 cursor-pointer items-center mb-6">
                             <a href="/dashboard/pickers" class="flex items-center focus:outline-none focus:ring-2 focus:ring-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-compass" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"></path>
-                                    <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
-                                    <circle cx="12" cy="12" r="9"></circle>
-                                </svg>
+                                <span class="material-symbols-outlined">
+                                    groups_3
+                                    </span>
                                 <span class="text-sm ml-2">Pemilih</span>
                             </a>
                         </li>
@@ -43,7 +37,9 @@
                     <ul class="w-full flex items-center justify-between bg-gray-800">
                         <li class="cursor-pointer text-white pt-5 pb-3">
                             <button aria-label="open logs" class="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M4.5 17q-.625 0-1.062-.438Q3 16.125 3 15.5v-11q0-.625.438-1.062Q3.875 3 4.5 3H10v1.5H4.5v11H10V17Zm9-3.5-1.062-1.062 1.687-1.688H8v-1.5h6.125l-1.687-1.688L13.5 6.5 17 10Z"/></svg>
+                                <span class="material-symbols-outlined">
+                                    logout
+                                    </span>
                             </button>
                         </li>
                     </ul>
