@@ -17,7 +17,8 @@ class Welcome extends Component
 
         $user = User::find(Auth::user()->id);
         $user->update([
-            'isvote' => true
+            'isvote' => true,
+            'candidate_id' => $id
         ]);
 
         return redirect('/');

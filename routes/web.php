@@ -7,7 +7,9 @@ use App\Http\Livewire\Dashboard\Candidate\AddCandidate;
 use App\Http\Livewire\Dashboard\Candidate\DashboardCandidate;
 use App\Http\Livewire\Dashboard\Candidate\EditCandidate;
 use App\Http\Livewire\Dashboard\Dashboard;
+use App\Http\Livewire\Dashboard\Picker\AddPicker;
 use App\Http\Livewire\Dashboard\Picker\DashboardPicker;
+use App\Http\Livewire\Dashboard\Picker\EditPicker;
 use App\Http\Livewire\Welcome;
 use Illuminate\Support\Facades\Route;
 
@@ -35,4 +37,6 @@ Route::middleware('admin')->group(function (){
     Route::get('/dashboard/candidates/{id}/edit', EditCandidate::class)->name('edit_candidate');
 
     Route::get('/dashboard/pickers', DashboardPicker::class)->name('dashboard_picker');
+    Route::get('/dashboard/pickers/add', AddPicker::class)->name('add_picker');
+    Route::get('/dashboard/pickers/{id}/edit', EditPicker::class)->name('edit_picker');
 });
