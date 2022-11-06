@@ -1,4 +1,4 @@
-@section('title', 'Tambah Kandidat')
+@section('title', 'Edit Kandidat')
 <div>
     <form wire:submit.prevent="save" method="post" enctype="multipart/form-data" >
         <div class="mb-6">

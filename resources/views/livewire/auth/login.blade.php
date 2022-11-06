@@ -1,4 +1,4 @@
-@section('title', 'Sign in to your account')
+@section('title', 'Masuk ke akunmu')
 
 <div>
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
