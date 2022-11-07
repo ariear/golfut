@@ -36,11 +36,14 @@
                 <div class="px-8 border-t border-gray-700">
                     <ul class="w-full flex items-center justify-between bg-gray-800">
                         <li class="cursor-pointer text-white pt-5 pb-3">
+                            <form action="/logout" method="post">
+                            @csrf
                             <button aria-label="open logs" class="focus:outline-none focus:ring-2 rounded focus:ring-gray-300">
                                 <span class="material-symbols-outlined">
                                     logout
                                     </span>
                             </button>
+                            </form>
                         </li>
                     </ul>
                 </div>
